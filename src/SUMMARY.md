@@ -1,4 +1,5 @@
 # Summary
 
+- [快捷查询](./01-quick—search.md)
 
-- [Chapter 1](./chapter_1.md)
+- [使用小技巧](./02-tips.md)
