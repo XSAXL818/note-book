@@ -8,4 +8,4 @@
 
 - [虚幻引擎学习](./03-unreal-engine.md)
     - [快捷操作](./ue/02-shortcut.md)
-    - [通识课](./ue/01-basic.md)
+    - [基础课](./ue/01-basic.md)
