@@ -5,5 +5,5 @@ language = "ch"
 
 [output.html]
 fold.enable = true
-fold.level = 2
+fold.level = 3
 default-theme = "rust"
