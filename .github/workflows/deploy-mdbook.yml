@@ -4,7 +4,7 @@ name: Build and Deploy mdBook to GitHub Pages
 # 触发条件：向 main 分支推送代码时触发（若主分支是 master 则改为 master）
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   # 可选：允许手动触发工作流
   workflow_dispatch:
 
