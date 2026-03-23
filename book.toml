@@ -4,7 +4,12 @@ authors = ["xsaxl","龙Tory"]
 language = "ch"
 
 
+[preprocessor.index]
+
 [output.html]
 fold.enable = true
-fold.level = 3
-default-theme = "rust"
+# 折叠等级，为1时，只会将1级标题的内容展开。为x时，将x+1的所有级标题的内容展开。
+fold.level = 1
+fold.auto = true
+
+default-theme = "Rust"
