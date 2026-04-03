@@ -42,7 +42,13 @@
 ## VSCode
 - 快速替换符号 Ctrl+h
 
-
+## Git
+### 结合mdbook serve 实现本地预览
+```实现目标```：本地的shit目录不会被提交到远程仓库，但是可以在本地实时预览。  
+```阻碍原因```：mdbook会根据 .gitignore 文件忽略 src/shit 目录，所以使用mdbook serve来本地实时预览时，修改shit目录下的文件，不会导致网页更新。
+- 方案一：.gitignore中忽略shit目录，让mdbook serve时不按照.gitignore来热更新，当前未成功
+- 方案二：.gitignore中不忽略shit目录，这样mdbook serve时，会监听到shit目录。此时修改.git/info/exclude 文件，添加 src/shit 目录，git将不会提交shit目录。
+![](assets/image.png)
 
 
 
