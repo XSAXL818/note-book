@@ -4,6 +4,8 @@
 
 - [mdbook快捷查询](./01-quick—search.md)
 
+- [便捷工具](./07-便捷工具.md)
+
 - [使用小技巧](./02-tips.md)
 
 - [英文和专有名词](./04-common-english.md)
@@ -33,4 +35,6 @@
     - [条件编译](./cmake/06-条件编译.md)
 
 - [shit](./shit/shit.md)
+    - [进度表](./shit/进度表.md)
+    - [test]()
 

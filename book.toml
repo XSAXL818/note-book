@@ -14,3 +14,9 @@ level = 1
 
 [output.html]
 default-theme = "Rust"
+
+[build]
+# 监听被 .gitignore 忽略的章节文件（路径相对于 book.toml）
+extra-watch-dirs = ["src/shit"]
+# 或监听整个目录
+# extra-watch-dirs = ["src/private"]
