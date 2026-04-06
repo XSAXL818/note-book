@@ -14,10 +14,13 @@
     - [VMware](./software/vmware.md)
     - [VSCode配置C++环境(mingw)](./software/vscode-mingw.md)
 
+- [conda](./08-conda.md)
+
 
 - [虚幻引擎学习](./03-unreal-engine.md)
     - [快捷操作](./ue/02-shortcut.md)
     - [基础课](./ue/01-basic.md)
+    - [Carla](./ue/03-carla.md)
 
 - [CMake](./06-cmake.md)
     - [初体验](./cmake/01-初体验.md)

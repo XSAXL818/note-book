@@ -189,25 +189,90 @@
     - 单面Billboard:本质是个单面的，始终朝向相机。
     ![](assets/image-25.png)
 
+### Nanite体积优化、精度优化
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- 启用Nanite，右键选中的静态网格体  
+    ![alt text](assets/image-26.png)
+- 进入网格体界面，在设置中设置Nanite的具体参数
+    ![alt text](assets/image-27.png)
+- 重要参数：
+    - 保持三角形百分比：Nanite优化后的模型三角形数为原模型的三角形的百分比，降低三角形数。不同模型减少三角形数的效果不同，根据模型的复杂程度和性能需求，选择合适的百分比。
+    - 修剪相对误差：保持优化后的与原模型的误差值。如果有很多模型需要修改，比较麻烦，可以使用该选项。
+        - 快速设置多个静态网格体的Nanite参数：shift+左键多选，然后右键打开菜单，选中`资产操作`中的`编辑属矩阵中的选择`
+        ![alt text](assets/image-28.png)
+        ![alt text](assets/image-29.png)
+    - 生成回退网格体：如果不支持Nanite，将会执行回退方案。在光照右边的小眼睛选择Nanite回退方案，可以查看回退后的模型。
+    回退的原模型是Nanite后的模型，不是面数最多的源模型。
+    ![alt text](assets/image-30.png)
+    - 法线精度：如果以后使用Nanite后的模型在光照下有尾影，把位数调高。
+    - 显式切线：如果模型表面光滑，出现明显的瑕疵，单独勾选显式切线。
+### Nanite性能优化
+- 观察Nanite物体（启用Nanite才会显示）
+    ![](assets/image-31.png)
+- 过渡绘制
+    亮度大的部位存在过渡绘制的问题。
+    ![alt text](assets/image-32.png)
+- 遮挡剔除：如果相机观察不到该物体，则不会渲染该物体，但如果物体只有一小部分被相机观察到，仍需要将物体全部渲染。
+![alt text](assets/image-33.png)
+- Nanite的簇
+    UE将物体划分为多个簇，每个簇包含多个三角形。UE根据相机位置和物体的距离，决定是否渲染某些簇。
+    ![alt text](assets/image-34.png)
+    不同颜色就是不同的簇。
+    ![alt text](assets/image-35.png)
+- 过渡绘制产生的原因
+    - 未启用Nanite的树叶实现
+    ![alt text](assets/image-36.png)
+    一片树叶本质是实体的面片，通过只显示叶子的部分，其余为透明来实现叶子。
+    ![alt text](assets/image-37.png)
+    黑色相框是实际的模型，中间的叶子通过不透明遮罩实际渲染出来的，形成树叶的效果。
+    ![alt text](assets/image-38.png)
+    因此当前场景中存在很多半透明的空隙，渲染管线很难在早起的时候就发现这层关系
+    传统工作流可以通过减少远处的模型LOD的层级，强行降低开销。
+    Nanite使用树枝树叶是实际的建模。
+    
+- UE5.7后优化（实验性功能）
+    - 开启插件，打开项目设置中的
+    ![alt text](assets/image-39.png)
+    ![alt text](assets/image-40.png)
+    - 找到插件位置，内容浏览器中搜索PVE，然后Ctrl+B跳转到文件具体目录下
+    ![alt text](assets/image-41.png)
+    - 选中第一个导出的节点，在导出设置中，设置导出的位置
+    ![alt text](assets/image-42.png)
+    - 网格体名称前缀可以改为SM，资产替换策略处设置为Append，新增而不是替换原有资产。
+    导出Mesh类型为静态网格体，Nanite中的形状保持量先设置为None。
+    ![alt text](assets/image-43.png)
+    - 右上角点击保存后点击导出，即可在目标目录下找到
+    ![alt text](assets/image-44.png)
+    - 打开后光照处选择线框模式，可以看到叶子是实际建模，在Nanite的设置中尽量不要使用减面操作（保持三角形百分比属性），目前正在实验阶段。
+    ![alt text](assets/image-45.png)
+    - 将其拖入到植被绘制中并保存
+    ![alt text](assets/image-46.png)
+    - 将其他植被的绘制属性复制到该新植被处，然后在地图上绘制树木
+    ![alt text](assets/image-47.png)
+    - 相对原先的过渡绘制，效果更好
+    ![alt text](assets/image-48.png)
+    - 存在的问题：远处树被剔除时，叶子太少，有点秃
+    ![alt text](assets/image-49.png)
+        - 在网格体界面的Nanite组下的形状保留属性选择Preserve Area
+        ![alt text](assets/image-51.png)
+        - 枝叶变丰满了
+        ![alt text](assets/image-52.png)
+        - 但是过渡绘制又变多了
+        ![alt text](assets/image-53.png)
+        - 形状保留属性选择体素化
+        ![alt text](assets/image-54.png)
+        - 性能、画面表现都变好了，甚至比属性选择None，枝叶秃的解决情况更好
+        ![alt text](assets/image-55.png)
+        ![alt text](assets/image-56.png)
+    - 体素的样子
+        - 在命令cmd处输入
+        ![alt text](assets/image-57.png)
+        - 查看体素的样子
+        ![alt text](assets/image-58.png)
+        - 光照处设置nanite三角形显示
+        ![alt text](assets/image-59.png)
+    - 目前发现的问题，不知道是不是nanite本身造成的结果还是需要再处理。大概率是后者，因为用的不是一种树。
+        <video controls src="assets/video_2026-04-07_00-50-59.webm" title="Title"></video>
 
 
 
