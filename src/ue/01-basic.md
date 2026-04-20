@@ -274,5 +274,6 @@
     - 目前发现的问题，不知道是不是nanite本身造成的结果还是需要再处理。大概率是后者，因为用的不是一种树。
         <video controls src="assets/video_2026-04-07_00-50-59.webm" title="Title"></video>
 
+### 非Nanite植被WPO(世界位置偏移)优化
 
 
