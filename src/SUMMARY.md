@@ -6,7 +6,7 @@
 
 
 - [使用技巧](./02-tips.md)
-    - [MdBook使用技巧](./11-mddBook使用.md)
+    - [MdBook使用技巧](./11-mdBook使用.md)
         - [markdown使用](./use__tips/1-markdown使用.md)
     - [便捷工具](./07-便捷工具.md)
     - [mdbook快捷查询](./01-quick—search.md)
@@ -25,6 +25,7 @@
     - [基础课](./ue/01-basic.md)
     - [Carla](./ue/03-carla.md)
     - [星露Studio学习](./ue/04-星露Studio.md)
+        - [蓝图基础](./ue/sub/04-01蓝图基础.md)
 
 --- 
 

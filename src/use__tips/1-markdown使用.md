@@ -505,6 +505,12 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 源码：
 ```text
 
+# 改标题的id为id1 {#id1}
+
+[跳转到id为id1](#id1)      
+
+[跳转网页的具体id处](../11-mdBook使用.md#1)  
+
 ```
 
 预览效果：
@@ -515,7 +521,7 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
 [跳转到id为id1](#id1)      
 
-[跳转网页的具体id处](../ch1-mdbook使用技巧.md#1)  
+[跳转网页的具体id处](../11-mdBook使用.md#1)  
 
 
 

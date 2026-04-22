@@ -1,4 +1,1 @@
-# MdBook使用
-
-- 支持原生的markdown
-- 
+# MdBook使用技巧
