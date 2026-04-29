@@ -8,3 +8,11 @@
 
 ### 从源码构建
 - 下载carla源码
+    ```cmd
+    git clone -b ue5-dev https://github.com/carla-simulator/carla.git CarlaUE5
+    ```
+
+- 构建命令：
+    ```cmd
+    .\CarlaSetup.bat --python-root=C:\Users\75271\.conda\envs\carla10
+    ```
