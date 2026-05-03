@@ -5,14 +5,14 @@
 --- 
 
 
-- [使用技巧](./02-tips.md)
-    - [mdbook快捷查询](./01-quick—search.md)
-    - [MdBook使用技巧](./11-mdBook使用.md)
-        - [markdown使用](./use__tips/1-markdown使用.md)
-    - [便捷工具](./07-便捷工具.md)
-    - [mdbook快捷查询](./01-quick—search.md)
+- [使用技巧](./01-使用技巧.md)
+    - [MdBook使用技巧](./01-01-mdBook使用.md)
+        - [markdown使用](./01-use_tips/1-markdown使用.md)
+    - [便捷工具](./01-02-便捷工具.md)
+    - [mdbook快捷查询](./01-03-mdbook快捷查询.md)
+    - [cmd命令](./01-04-cmd命令.md)
 
-- [英文和专有名词](./04-英语学习.md)
+- [英文和专有名词](./02-英语学习.md)
 
 --- 
 
@@ -20,42 +20,27 @@
 
 # 游戏开发
 
-- [虚幻引擎学习](./03-unreal-engine.md)
-    - [文档学习](ue/04-document.md)
-    - [快捷操作](./ue/02-shortcut.md)
-    - [基础课](./ue/01-basic.md)
-    - [Carla](./ue/03-carla.md)
-    - [星露Studio学习](./ue/04-星露Studio.md)
-        - [蓝图基础](./ue/sub/04-01蓝图基础.md)
+- [虚幻引擎学习](./03-虚幻引擎学习.md)
+    - [文档学习](03-ue/01-document.md)
+    - [快捷操作](./03-ue/02-shortcut.md)
+    - [基础课](./03-ue/03-basic.md)
+    - [Carla](./03-ue/04-carla.md)
+    - [星露Studio学习](./03-ue/04-星露Studio.md)
+        - [蓝图基础](./03-ue/sub/04-01蓝图基础.md)
 
 --- 
 
 # 软件安装使用
 
-- [软件工具](./10-软件工具.md)
+- [软件工具](./04-软件工具.md)
     
-    - [软件安装相关](./05-软件安装.md)
-        - [VMware](./software/vmware.md)
-        - [VSCode配置C++环境(mingw)](./software/vscode-mingw.md)
+    - [软件安装相关](./04-01-软件安装.md)
+        - [VMware](./04-software/vmware.md)
+        - [VSCode配置C++环境(mingw)](./04-software/vscode-mingw.md)
 
-    - [conda](./08-conda.md)
-    
+    - [conda](./04-02-conda.md)
     
 
-    - [CMake](./06-cmake.md)
-        - [初体验](./cmake/01-初体验.md)
-            - [windows下构建项目](./cmake/section/01-1-windows.md)
-            - [linux下构建项目](./cmake/section/01-2-linux.md)
-        - [语法](./cmake/02-语法.md)
-            - [变量](./cmake/section/02-1-变量.md)
-            - [set和list命令](./cmake/section/02-2-set_list.md)
-            - [流程控制](./cmake/section/02-3-control.md)
-            - [函数](./cmake/section/02-4-function.md)
-            - [宏](./cmake/section/02-5-mrco.md)
-        - [构建项目的方式](./cmake/03-构建方式.md)
-        - [静态库和动态库](./cmake/04-库文件.md)
-        - [源文件交互](./cmake/05-源文件交互.md)
-        - [条件编译](./cmake/06-条件编译.md)
 
 
 
@@ -63,9 +48,9 @@
 
 # 研学习
 
-- [论文阅读](./09-论文阅读.md)
-    - [世界模型相关资料](./paper/02-世界模型相关资料.md)
-    - [世界模型WorldModels](./paper/01-World_Models.md)
+- [论文阅读](./05-论文阅读.md)
+    - [世界模型相关资料](./05-paper/02-世界模型相关资料.md)
+    - [世界模型WorldModels](./05-paper/01-World_Models.md)
 
 
     
