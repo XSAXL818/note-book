@@ -10,8 +10,7 @@
     - [MdBook使用技巧](./11-mdBook使用.md)
         - [markdown使用](./use__tips/1-markdown使用.md)
     - [便捷工具](./07-便捷工具.md)
-    - [常用命令](./12-cmd.md)
-    
+    - [mdbook快捷查询](./01-quick—search.md)
 
 - [英文和专有名词](./04-英语学习.md)
 
@@ -28,7 +27,6 @@
     - [Carla](./ue/03-carla.md)
     - [星露Studio学习](./ue/04-星露Studio.md)
         - [蓝图基础](./ue/sub/04-01蓝图基础.md)
-        - [跳跳乐游戏实战](./ue/sub/04-02蓝图实战.md)
 
 --- 
 
