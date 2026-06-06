@@ -7,7 +7,7 @@ language = "zh-CN"
 [output.html.fold]
 enable = true
 # 折叠等级，为1时，只会将1级标题的内容展开。为x时，将x+1的所有级标题的内容展开。
-level = 1
+level = 2
 
 [output.html]
 default-theme = "Rust"
