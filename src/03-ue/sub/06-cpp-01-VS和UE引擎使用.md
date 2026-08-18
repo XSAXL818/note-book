@@ -2,6 +2,22 @@
 
 ## Visual Studio开发
 
+### UE输出日志中文乱码问题
+
+Visual Studio 默认使用中文编码GB2312，但UE的输出日志控制台处使用UTF-8，因此会出现C++文件中使用中文打印但在ue端是乱码。
+
+解决方法：将VS的默认文件保存编码设置为UTF-8(带标签)即可。
+
+顶部`工具栏` > `选项` > `环境` > `文档` > `使用特定编码保存文件`
+
+![alt text](assets/image-178.png)
+
+![alt text](assets/image-179.png)
+
+中文打印不再乱码：
+
+![alt text](assets/image-180.png)
+
 ### 解决方案目录： 
 
 ![alt text](assets/image-175.png)

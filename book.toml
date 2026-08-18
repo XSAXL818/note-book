@@ -10,7 +10,7 @@ enable = true
 level = 2
 
 [output.html]
-default-theme = "Rust"
+default-theme = "Ayu"
 
 
 [build]
