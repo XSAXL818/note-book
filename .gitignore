@@ -2,4 +2,9 @@ book
 
 workspace
 
+# GAMES101 课件 PDF（体积大，不推送 GitHub，仅本地使用）
+/src/games101/课件/
+
+
+
 # src/shit
