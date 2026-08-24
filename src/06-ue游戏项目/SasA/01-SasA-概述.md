@@ -80,17 +80,3 @@
 
 ---
 
-
-## 角色骨骼网格体及动画
-
-我给你一句“最小 MVP 顺序”（先把成就感跑出来）
-
-BL：方块人/简模 + Armature（Root→Hips…）+ 刷一点点权
-
-BL：Ctrl+A All Transforms → 原点归位 → 导出 FBX
-
-UE：拖入 Content → 得到 Skeletal Mesh → 打开确认骨骼层级
-
-BL：K 两个动作（Idle / Run）→ 分别导出为两个 FBX → 导入成 AnimSequence
-
-UE：建 AnimBlueprint（BlendSpace + StateMachine）→ 建 Character → 跑起来
