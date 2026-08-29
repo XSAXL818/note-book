@@ -22,6 +22,7 @@
 # 学习🤓🤓
 
 - [😍虚幻引擎学习](./03-虚幻引擎学习.md)
+    - [踩坑笔记](./03-ue/踩坑笔记.md)
     - [文档学习](03-ue/01-document.md)
     - [快捷操作](./03-ue/02-shortcut.md)
     - [基础课](./03-ue/03-basic.md)
@@ -61,9 +62,9 @@
     -->
 
 - [😶‍🌫️GAMES101:图形学入门](./图形学入门.md)
-    - [代码作业](./games101/work.md)
-        - [1](./games101/work1.md)
-        - [2](./games101/work2.md)
+    - [笔记](./games101/work.md)
+        - [计算机图形学概述](./games101/work1.md)
+        - [向量与线性代数](./games101/work2.md)
         - [3](./games101/work3.md)
         - [4](./games101/work4.md)
         - [5](./games101/work5.md)
@@ -96,13 +97,13 @@
 
 
 --- 
-
+<!-- 
 # 研学习
 
 - [论文阅读](./05-论文阅读.md)
     - [世界模型相关资料](./05-paper/02-世界模型相关资料.md)
     - [世界模型WorldModels](./05-paper/01-World_Models.md)
-
+ -->
 
     
 
