@@ -65,7 +65,7 @@
     - [笔记](./games101/work.md)
         - [计算机图形学概述](./games101/work1.md)
         - [向量与线性代数](./games101/work2.md)
-        - [3](./games101/work3.md)
+        - [变换](./games101/work3.md)
         - [4](./games101/work4.md)
         - [5](./games101/work5.md)
         - [6](./games101/work6.md)
