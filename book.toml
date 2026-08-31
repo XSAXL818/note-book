@@ -19,5 +19,4 @@ default-theme = "Ayu"
 # 或监听整个目录
 # extra-watch-dirs = ["src/private"]
 
-extra-watch-dirs = ["src\\games101\\课件"]
 
