@@ -53,6 +53,7 @@
     - [UE C++](./03-ue/06-cpp.md)
         - [笔记](./03-ue/sub/06-cpp-笔记.md) 
             - [VS和UE引擎使用](./03-ue/sub/06-cpp-01-VS和UE引擎使用.md) 
+            - [射线检测](./03-ue/sub/06-cpp-02-射线检测.md) 
             <!-- - [Z-up向上坐标系](./03-ue/sub/06-cpp-02-Z-up向上坐标系.md)  -->
         
 
@@ -65,7 +66,7 @@
     - [笔记](./games101/work.md)
         - [计算机图形学概述](./games101/work1.md)
         - [向量与线性代数](./games101/work2.md)
-        - [3](./games101/work3.md)
+        - [变换](./games101/work3.md)
         - [4](./games101/work4.md)
         - [5](./games101/work5.md)
         - [6](./games101/work6.md)

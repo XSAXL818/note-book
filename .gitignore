@@ -5,3 +5,6 @@ workspace
 
 
 # src/shit
+
+# GAMES101 课件（junction 指向 GameProject\Games101\课件，构建时复制进 book/）
+/src/games101/课件/
